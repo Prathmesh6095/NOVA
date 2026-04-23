@@ -66,7 +66,7 @@ def wishme():
 
     else:
         speak(f"Good evening sir!, its {pt}")
-    speak("I am jarvis , How can I help you?")
+    speak("I am NOVA , How can I help you?")
 
 #to send email
 def sendEmail(to,content):
@@ -132,7 +132,7 @@ def start():
             os.system("taskkill /f /im POWERPNT.EXE")
             speak("Done sir.")
 
-        elif "open excel" in query:
+        elif "open excel " in query:
             speak("sure sir, opening excel")
             wpath = "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE"
             os.startfile(wpath)
@@ -265,13 +265,13 @@ def start():
             time.sleep(1)
             pyautogui.keyUp("alt")
 
-        elif "send email to" in query:
+        elif "send email" in query:
             try:
                 speak("What should I say?")
                 content = takecommand().lower()
                 to = "patu87422@gmail.com"
                 sendEmail(to,content)
-                speak("Email has been sent to kedar")
+                speak("Email has been sent to Prathamesh Succesfully.")
             
             except Exception as e:
                 print(e)
@@ -328,7 +328,7 @@ def start():
 
 #----------Greetings----------#
 
-        elif "hello jarvis" in query or "Heyy jarvis" in query:
+        elif "hello NOVA" in query or "Heyy NOVA" in query:
             speak("Hello sir, Welcome back!")
 
         elif "how are you" in query or "how r u" in query:
