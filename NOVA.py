@@ -121,7 +121,7 @@ def start():
             os.system("taskkill /f /im WINWORD.exe")
             speak("Done sir.")
 
-        elif "open powerpoint" in query:
+        elif "open powerpoint " in query:
             speak("sure sir")
             wpath = "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE"
             os.startfile(wpath)
