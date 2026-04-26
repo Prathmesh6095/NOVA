@@ -10,7 +10,7 @@ from requests import get
 import requests
 import wikipedia
 import webbrowser
-import pywhatkit as kit
+import pywhatkit as   kit
 import smtplib 
 import sys
 import time
