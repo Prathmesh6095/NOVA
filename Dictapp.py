@@ -16,7 +16,7 @@ def speak(audio):
 
 #to open web
 def openweb(query):
-    speak("Opening sir....")
+    speak("Opening sir.....")
     if ".com" in query or ".in" in query or ".org" in query or  "wikipedia" in query or "openai" in query:
         query = query.replace("open","")
         query = query.replace("jarvis","")
@@ -31,7 +31,7 @@ def openweb(query):
 
 #To close any app
 def closeappweb(query):
-    speak("Closing sir....")
+    speak("Closing sir.....")
     if "one tab" in query or "1 tab" in query:
         pyautogui.hotkey("ctrl","w")
         sleep(0.5)
