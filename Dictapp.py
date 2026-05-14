@@ -35,7 +35,7 @@ def closeappweb(query):
     if "one tab" in query or "1 tab" in query:
         pyautogui.hotkey("ctrl","w")
         sleep(0.5)
-    elif "two tab" in query or "2 tab" in query:
+    elif "two tab" in query or "2 tab " in query:
         pyautogui.hotkey("ctrl","w")
         sleep(0.5)
         pyautogui.hotkey("ctrl","w")
