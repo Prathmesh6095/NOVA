@@ -31,7 +31,7 @@ def openweb(query):
 
 #To close any app
 def closeappweb(query):
-    speak("Closing sir.....")
+    speak("Closing sir......")
     if "one tab" in query or "1 tab" in query:
         pyautogui.hotkey("ctrl","w")
         sleep(0.5)
