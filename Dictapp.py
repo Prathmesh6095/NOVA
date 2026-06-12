@@ -46,7 +46,7 @@ def closeappweb(query):
         sleep(0.5)
         speak("sir, All tabs are closed")
     elif "three tab" in query or "3 tab" in query:
-        pyautogui.hotkey("ctrl"," w")
+        pyautogui.hotkey("ctrl","w")
         sleep(0.5)
         pyautogui.hotkey("ctrl","w")
         sleep(0.5)
